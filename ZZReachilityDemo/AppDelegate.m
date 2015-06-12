@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "ZZReachbility.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,18 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    ZZReachbility *reach = [[ZZReachbility alloc]init];
+    
+    [reach startToReachbility];
+    
+    reach.getNetStatus = ^(NetworkStatus status){
+        
+        NSLog(@"status == %ld",status);
+        
+    };
+    
+    
     return YES;
 }
 

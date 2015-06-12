@@ -14,6 +14,8 @@
 		E4E1F3011B29CD91005D0754 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4E1F3001B29CD91005D0754 /* Images.xcassets */; };
 		E4E1F3041B29CD91005D0754 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4E1F3021B29CD91005D0754 /* LaunchScreen.xib */; };
 		E4E1F3101B29CD91005D0754 /* ZZReachilityDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E4E1F30F1B29CD91005D0754 /* ZZReachilityDemoTests.m */; };
+		E4E1F3201B29CDA8005D0754 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = E4E1F31D1B29CDA8005D0754 /* Reachability.m */; };
+		E4E1F3211B29CDA8005D0754 /* ZZReachbility.m in Sources */ = {isa = PBXBuildFile; fileRef = E4E1F31F1B29CDA8005D0754 /* ZZReachbility.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,10 @@
 		E4E1F3091B29CD91005D0754 /* ZZReachilityDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZZReachilityDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4E1F30E1B29CD91005D0754 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E4E1F30F1B29CD91005D0754 /* ZZReachilityDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZZReachilityDemoTests.m; sourceTree = "<group>"; };
+		E4E1F31C1B29CDA8005D0754 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		E4E1F31D1B29CDA8005D0754 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		E4E1F31E1B29CDA8005D0754 /* ZZReachbility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZReachbility.h; sourceTree = "<group>"; };
+		E4E1F31F1B29CDA8005D0754 /* ZZReachbility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZReachbility.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +87,7 @@
 		E4E1F2F21B29CD91005D0754 /* ZZReachilityDemo */ = {
 			isa = PBXGroup;
 			children = (
+				E4E1F3191B29CD9E005D0754 /* Class */,
 				E4E1F2F71B29CD91005D0754 /* AppDelegate.h */,
 				E4E1F2F81B29CD91005D0754 /* AppDelegate.m */,
 				E4E1F2FA1B29CD91005D0754 /* ViewController.h */,
@@ -117,6 +124,33 @@
 				E4E1F30E1B29CD91005D0754 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E4E1F3191B29CD9E005D0754 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				E4E1F31A1B29CDA8005D0754 /* ZZReachability */,
+			);
+			name = Class;
+			sourceTree = "<group>";
+		};
+		E4E1F31A1B29CDA8005D0754 /* ZZReachability */ = {
+			isa = PBXGroup;
+			children = (
+				E4E1F31B1B29CDA8005D0754 /* Reachability */,
+				E4E1F31E1B29CDA8005D0754 /* ZZReachbility.h */,
+				E4E1F31F1B29CDA8005D0754 /* ZZReachbility.m */,
+			);
+			path = ZZReachability;
+			sourceTree = "<group>";
+		};
+		E4E1F31B1B29CDA8005D0754 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				E4E1F31C1B29CDA8005D0754 /* Reachability.h */,
+				E4E1F31D1B29CDA8005D0754 /* Reachability.m */,
+			);
+			path = Reachability;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,6 +255,8 @@
 			files = (
 				E4E1F2FC1B29CD91005D0754 /* ViewController.m in Sources */,
 				E4E1F2F91B29CD91005D0754 /* AppDelegate.m in Sources */,
+				E4E1F3211B29CDA8005D0754 /* ZZReachbility.m in Sources */,
+				E4E1F3201B29CDA8005D0754 /* Reachability.m in Sources */,
 				E4E1F2F61B29CD91005D0754 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
